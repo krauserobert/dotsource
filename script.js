@@ -1,4 +1,4 @@
-// Variablen definieren auf die wir im HTML zugreifen wollen
+// Variablen definieren, auf die wir im HTML zugreifen wollen
 const button = document.getElementById("submitBtn-Js");
 const newItem = document.getElementById("itemInputField-Js");
 const itemList = document.getElementById("itemList-Js");

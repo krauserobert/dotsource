@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+
+<!-- head Bereich für Metadaten -->
+<head> 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Einkaufsliste</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
+<!-- body Bereich für HTML-Elemente -->
 <body>
 
     <div class="wrapper">
@@ -25,18 +29,20 @@
             </section>
 
             <!-- Eingabeformular -->
-            <div id="inputForm" class="inputForm">
+            <div class="inputForm">
                 <h1>Einkaufsliste</h1>
-                <input id="itemInputField-Js" type="text" placeholder="Eingabe" class="itemInputField" />
-                <button id="submitBtn-Js" type="submit" name="submit" class="submitBtn">
+                <!-- unser Eingabefeld, um unsere Liste zu füllen -->
+                <input type="text" placeholder="Eingabe" class="itemInputField" /> <!-- id="itemInputField-Js" hinzufügen, um mit JS darauf zugreifen zu können -->
+                <!-- unser Button zum Klicken -->
+                <button type="button" class="submitBtn"> <!-- id="submitBtn-Js" hinzufügen, um mit JS darauf zugreifen zu können -->
                     <p>Hinzufügen</p>
                 </button>
             </div>
 
             <!-- Ausgabe der Einkaufsliste -->
             <div class="listArea">
-                <ul id="itemList-Js">
-                    <!-- Hier werden die Items der Liste hinzugefügt -->
+                <ul > <!-- id="itemList-Js" hinzufügen, um mit JS darauf zugreifen zu können -->
+                    <!-- Hier werden die Listen-Elemente (li) vom JavaScript-Code hinzugefügt, sobald auf den Button geklickt wird -->
                 </ul>
             </div>
 
@@ -47,7 +53,7 @@
             <p>Habe ich selbst gemacht. Viel Spaß beim Einkaufen.</p>
         </footer>
 
-        <!-- JavaSript hinzufügen-->
+        <!-- JavaSript-Datei einbinden (am Ende der Datei, damit der Code erst ausgeführt wird, sobald die Seite fertig geladen ist) -->
         <script src="script.js"></script>
     
     </div>
